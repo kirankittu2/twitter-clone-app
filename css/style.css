@@ -1,0 +1,566 @@
+body{
+    font-family: Montserrat, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* Registration and Login */
+
+.gesto-header{
+    background-color: rgb(0, 85, 255);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.gesto-header h1 , .gesto-header h3{
+    color: white;
+    
+}
+
+.gesto-header-outer{
+    border: 1px solid #383838;
+    border-radius: 3px;
+}
+
+.form-control {
+   
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(204, 204, 204, 0.2);
+}
+
+.form-control::placeholder {
+    opacity: 0.5;
+    color: white;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: none;
+    background-color: rgb(204, 204, 204, 0.2);
+    color: white;
+}
+
+.btn{
+    border-radius: 3px;
+}
+
+.switch-account-button{
+   border: none;
+   background :none;
+   color: white;
+}
+
+/* Feed */
+
+.logo{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.profile{
+    height: 100vh;
+    position: fixed;
+    left: 16.4%;
+    border-right: 0.5px solid #383838;
+    
+}
+
+.profile-inner{
+    height: 100vh;
+}
+
+.search{
+    height: 100vh;
+    position: fixed;
+    right : 16.4%;
+    border-left: 0.5px solid #383838;
+
+}
+
+ul{
+    list-style: none;
+}
+li{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top : 10px;
+    padding-bottom: 10px;
+    
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: #645f5f33;
+    border-radius: 3px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.profile-icon{
+    width: 10%;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 0.5px solid #383838;
+}
+
+.main-content-border{
+    border-right: 0.5px solid #383838;
+    border-left: 0.5px solid #383838;
+    border-bottom: 0.5px solid #383838;
+    height: 100vh;
+}
+
+.gesto-search{
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(204, 204, 204, 0.2);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.gesto-search::placeholder {
+    color: white;
+}
+
+.gesto-search:focus {
+    background-color: rgb(204, 204, 204, 0.2);
+    color: white;
+}
+
+.follower-container{
+    cursor: pointer;
+}
+
+.follower-container:hover {
+    background-color: #1d2026;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Profile */
+
+.number-of-posts{
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.profile-picture{
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.profile-picture-editable{
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.profile-picture-main{
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.text-opacity{
+    opacity: 0.5;
+}
+
+.custom-button{
+    
+    border: 1px solid #383838;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.custom-button:hover  {
+    background-color: rgb(204, 204, 204, 0.2);
+    color: white;
+}
+
+.custom-button:active{
+    border: none;
+    background-color: rgb(204, 204, 204, 0.2) !important;
+    border: 1px solid #383838 !important;
+}
+
+.show{
+    display: block;
+}
+
+.remove{
+    display: none;
+}
+
+.popup-outer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(91, 112, 131, 0.4);
+    z-index: 2;
+}
+
+.popup-inner{
+    position: fixed;
+    width: 600px;
+    height: auto;
+    left: 50%;
+    top : 50%;
+    transform: translate(-50% , -50%);
+    background-color: black;
+    z-index: 3;
+    border-radius: 30px;
+}
+
+.popup-outer-2 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(91, 112, 131, 0.4);
+    z-index: 2;
+}
+
+.popup-inner-2 {
+    position: fixed;
+    width: 600px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    z-index: 3;
+    border-radius: 30px;
+}
+
+.profile-save-button{
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.profile-save-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.profile-save-button:active {
+    background-color: white;
+    color: black;
+}
+
+.profile-picture-save-button {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.profile-picture-save-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.profile-picture-save-button:active {
+    background-color: white;
+    color: black;
+}
+
+.profile-save-button-2 {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.profile-save-button-2:hover {
+    background-color: white;
+    color: black;
+}
+
+.profile-save-button-2:active {
+    background-color: white;
+    color: black;
+}
+
+.profile-cross-button{
+    cursor: pointer;
+}
+
+.profile-posts-navigation{
+    padding: 0px 0px;
+}
+
+.post{
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.post:hover {
+    background-color: rgb(204, 204, 204, 0.2)
+}
+
+.replies{
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.replies:hover {
+    background-color: rgb(204, 204, 204, 0.2)
+}
+
+.likes{
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.likes:hover {
+    background-color: rgb(204, 204, 204, 0.2)
+}
+
+/* Feed */
+
+.heading-bold{
+    font-weight: 700;
+}
+
+.headers-top-fixed{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1;
+}
+
+.custom-blue-button {
+    border: none;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.custom-blue-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.custom-blue-button:active {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.feed-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.feed-form-control{
+    background-color: black;
+}
+
+.feed-form-control:focus {
+    background-color: black;
+}
+
+textarea{
+    resize: none;
+    min-height: 50px;  
+}
+
+.top-border{
+    border-top: 1px solid #383838;
+}
+
+.gesto-post{
+    cursor: pointer;
+}
+
+.like:hover{
+    cursor: pointer;
+    color: rgb(112, 185, 233) !important;
+}
+
+.comment:hover {
+    color: rgb(112, 185, 233) !important;
+}
+
+.like-comment{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.logout{
+    cursor: pointer;
+}
+
+.logout:hover{
+    background-color: #645f5f33;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+
+.who-to-follow{
+    background-color: rgb(22, 24, 28);
+    height: 289px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.who-to-follow-text{
+    font-weight: 700;
+}
+
+.post-container:hover{
+    background-color: rgb(10, 10, 10);
+}
+
+.post-like-comment-border{
+    border-top: 0.5px solid #383838;
+    border-bottom: 0.5px solid #383838;
+}
+
+.line{
+    width: 2px;
+    height: 100%;
+    background-color: rgb(51, 54, 57);
+}
+
+.show-more-color{
+    color: #1d9bf0;
+}
+
+.comment-container:hover{
+    cursor: pointer;
+    background-color: rgb(10, 10, 10);
+}
+
+.inner-comment-container{
+    padding: 10px 16px;
+}
+.inner-comment-container:hover{
+    cursor: pointer;
+    background-color: rgb(10, 10, 10);
+}
+
+.imageinput{
+    display: none;
+}
+
+.imagelabel{
+    cursor: pointer;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagelabel:hover::after {
+    content: 'Choose Image';
+}
+.imagelabel:hover{
+    background-color: rgb(82, 81, 81, 0.5);
+}
+
+.image-position{
+    position: relative;
+}
+
+.profile-picture-crop{
+    width: 500px;
+    height: 500px;
+}
+
+.profile-picture-edits{
+    width: 100%;
+}
+
+.cropper-bg{
+    background-image: none;
+}
+
+.message-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.message-box:hover {
+    background-color: #161616;
+}
+
+.messages{
+    overflow-y: auto;
+    height : 100vh;
+}
+
+.send-message-input-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 0.5px solid #383838;
+}
+
+#inner-main-content{
+    position: relative;
+}
+
+.message-containers{
+    cursor: pointer;
+}
+
+.message-containers:hover {
+    background-color: rgb(204, 204, 204, 0.2);
+}
